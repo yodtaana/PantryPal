@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Ingredient Input Styles */
+.ingredient-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.ingredient-input input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.ingredient-input button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ingredient-input button:hover {
+  background-color: #0056b3;
+}
+
+.ingredient-input ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.ingredient-input li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient-input li button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.ingredient-input li button:hover {
+  background-color: #c82333;
+}
+
+/* Recipe List Styles */
+.recipe-list {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-list ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.recipe-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-list img {
+  max-width: 100px;
+  display: block;
+  margin: 10px 0;
+}
+
+.recipe-list a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.recipe-list a:hover {
+  text-decoration: underline;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 900px) {
+  .ingredient-input, .recipe-list {
+    width: 90%;
+  }
+
+  .ingredient-input input, .ingredient-input ul, .recipe-list ul {
+    max-width: 100%;
+  }
+
+  .recipe-list img {
+    max-width: 80px;
+  }
+}
